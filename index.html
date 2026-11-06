@@ -50,7 +50,7 @@ h1{font-size:clamp(3rem,9vw,6rem);line-height:.95;letter-spacing:-.04em;margin:0
 .visual{position:relative;justify-self:center;width:min(340px,80vw);aspect-ratio:1}
 .ring{position:absolute;inset:-6px;border-radius:50%;background:conic-gradient(from 0deg,var(--a),var(--b),var(--c),var(--a));animation:spin 10s linear infinite;filter:blur(1px)}
 .visual::after{content:"";position:absolute;inset:-40px;border-radius:50%;background:radial-gradient(circle,rgba(95,211,166,.22),transparent 65%);z-index:-1}
-.photo{position:absolute;inset:6px;width:calc(100% - 12px);height:calc(100% - 12px);border-radius:50%;object-fit:cover;border:6px solid var(--bg)}
+.photo{position:absolute;inset:6px;width:calc(100% - 12px);height:calc(100% - 12px);border-radius:50%;object-fit:cover;object-position:center 20%;border:6px solid var(--bg)}
 @keyframes spin{to{transform:rotate(360deg)}}
 .chip{position:absolute;padding:8px 14px;border-radius:12px;background:rgba(14,24,20,.88);border:1px solid var(--line);backdrop-filter:blur(8px);font-size:.82rem;font-weight:700;animation:float 5s ease-in-out infinite}
 .chip.c1{top:6%;left:-14%}.chip.c2{top:44%;right:-18%;animation-delay:-1.5s}.chip.c3{bottom:4%;left:-8%;animation-delay:-3s}.chip.c4{top:-4%;right:6%;animation-delay:-2s}
@@ -133,7 +133,7 @@ footer{padding:36px 0 48px;text-align:center;color:var(--muted);font-size:.9rem;
       <li><a href="#competences">Compétences</a></li>
       <li><a href="#parcours">Parcours</a></li>
       <li><a href="#contact">Contact</a></li>
-      <li class="cv-li"><a href="CV_KENZA_MINBARI.pdf?v=3" target="_blank" rel="noopener" class="cv-btn" style="color:#06110c;padding:10px 18px;margin-left:6px">📄 Mon CV (PDF)</a></li>
+      <li class="cv-li"><a href="CV_KENZA_MINBARI.pdf?v=4" target="_blank" rel="noopener" class="cv-btn" style="color:#06110c;padding:10px 18px;margin-left:6px">📄 Mon CV (PDF)</a></li>
     </ul>
     <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
   </div>
@@ -149,14 +149,14 @@ footer{padding:36px 0 48px;text-align:center;color:var(--muted);font-size:.9rem;
       <p class="lead">Élève ingénieure en 5ème année à l'EMSI Rabat, passionnée par le back-end et les architectures microservices. Je conçois des solutions fiables, sécurisées et scalables.</p>
       <div class="btns">
         <a class="btn p" href="#projets">Découvrir mes projets →</a>
-        <a class="btn" href="CV_KENZA_MINBARI.pdf?v=3" target="_blank" rel="noopener">Consulter mon CV ↗</a>
-        <a class="btn" href="CV_KENZA_MINBARI.pdf?v=3" download="CV_KENZA_MINBARI.pdf">Télécharger ⬇</a>
+        <a class="btn" href="CV_KENZA_MINBARI.pdf?v=4" target="_blank" rel="noopener">Consulter mon CV ↗</a>
+        <a class="btn" href="CV_KENZA_MINBARI.pdf?v=4" download="CV_KENZA_MINBARI.pdf">Télécharger ⬇</a>
       </div>
     </div>
     <div class="visual">
       <div class="ring"></div>
-      <img class="photo" alt="Portrait de Kenza Minbari" width="480" height="480" src="photo.jpg">
-     <span class="chip c1">☕ Java 17</span><span class="chip c2">🍃 Spring Boot</span><span class="chip c3">🧩 Microservices</span><span class="chip c4">⚛ React</span>
+      <img class="photo" alt="Portrait de Kenza Minbari" width="480" height="480" src="photo.jpeg">
+      <span class="chip c1">☕ Java 17</span><span class="chip c2">🍃 Spring Boot</span><span class="chip c3">🧩 Microservices</span><span class="chip c4">⚛ React</span>
     </div>
   </div>
   <div class="wrap">
@@ -201,7 +201,7 @@ footer{padding:36px 0 48px;text-align:center;color:var(--muted);font-size:.9rem;
   <h2 class="rv">Des projets qui ont<br><span>un objectif concret.</span></h2>
   <div class="grid">
     <article class="card rv"><span class="num">PROJET 01</span><h3>Analyseur de CV assisté par IA</h3><p>Application web qui analyse un CV et génère automatiquement des suggestions de correction grâce à l'intelligence artificielle.</p><ul class="tags"><li>Java</li><li>Spring Boot</li><li>PostgreSQL</li><li>IA</li></ul></article>
-    <article class="card rv"><span class="num">PROJET 02</span><h3>Gestion des interventions techniques</h3><p>Système pour organiser les demandes d'interventions et de maintenance sur le terrain.</p><ul class="tags"><li>Java</li><li>Spring Boot</li><li>PostgreSQL</li></ul></article>
+    <article class="card rv"><span class="num">PROJET 02</span><h3>Gestion des interventions techniques et de maintenance</h3><p>Système pour organiser les demandes d'interventions et de maintenance sur le terrain.</p><ul class="tags"><li>Java</li><li>Spring Boot</li><li>PostgreSQL</li></ul></article>
     <article class="card rv"><span class="num">PROJET 03</span><h3>Smart City</h3><p>Gestion de données urbaines pour analyser les informations d'une ville intelligente.</p><ul class="tags"><li>MongoDB</li><li>Cassandra</li><li>Neo4j</li></ul></article>
     <article class="card rv"><span class="num">PROJET 04</span><h3>Optimisation de base de données</h3><p>Comparaison avant/après : index, réécriture de requêtes et analyse des plans d'exécution.</p><ul class="tags"><li>Oracle</li><li>Big Data</li><li>SQL</li></ul></article>
     <article class="card rv"><span class="num">PROJET 05</span><h3>Classification d'images par Deep Learning</h3><p>Entraînement et évaluation d'un modèle de reconnaissance d'images.</p><ul class="tags"><li>Python</li><li>Deep Learning</li></ul></article>
@@ -230,27 +230,32 @@ footer{padding:36px 0 48px;text-align:center;color:var(--muted);font-size:.9rem;
     <div>
       <h2 class="s">Formation</h2>
       <ul class="list">
-        <li><strong>Cycle d'ingénieur en informatique, spécialité développement</strong><small>EMSI, Rabat · depuis oct. 2024 (5ᵉ année)</small></li>
-        <li><strong>2 années préparatoires</strong><small>EMSI, Rabat · oct. 2022 – juil. 2024</small></li>
-        <li><strong>Baccalauréat international, Sciences Physiques</strong><small>Lycée Abidar Al Ghaffari, Rabat · 2021 – 2022</small></li>
+        <li><strong>Cycle d'ingénieur en informatique, spécialité développement</strong><small>EMSI – École Marocaine des Sciences de l'Ingénieur, Rabat · depuis oct. 2024 (5ᵉ année)</small></li>
+        <li><strong>2 années préparatoires</strong><small>EMSI – École Marocaine des Sciences de l'Ingénieur, Rabat · 2022 – 2024</small></li>
+        <li><strong>Baccalauréat international, Sciences Physiques</strong><small>Lycée Abidar Al Ghaffari, Rabat · 2022</small></li>
       </ul>
     </div>
     <div>
       <h2 class="s">Certifications</h2>
       <ul class="list">
+        <li><strong>Finding a Job is a Job (FJIJ 768)</strong><small>EFE Maroc, l'éducation pour l'emploi · Mastercard Foundation · nov. 2026</small></li>
         <li><strong>Oracle Certified Professional: Java SE 17 Developer</strong><small>Oracle · sept. 2026</small></li>
-        <li><strong>Introduction to Big Data</strong><small>UC San Diego · avr. 2026</small></li>
-        <li><strong>Agile Project Management</strong><small>Google · mars 2026</small></li>
-        <li><strong>React Basics</strong><small>Meta · nov. 2025</small></li>
-        <li><strong>Python for Data Science, AI &amp; Development</strong><small>IBM · mars 2025</small></li>
-        <li><strong>Software Design and Project Management</strong><small>HKUST · mars 2025</small></li>
-        <li><strong>The Unix Workbench</strong><small>Johns Hopkins University · nov. 2024</small></li>
+        <li><strong>Introduction to Big Data</strong><small>UC San Diego · Coursera · avr. 2026</small></li>
+        <li><strong>Agile Project Management</strong><small>Google · Coursera · mars 2026</small></li>
+        <li><strong>React Basics</strong><small>Meta · Coursera · nov. 2025</small></li>
+        <li><strong>Python for Data Science, AI &amp; Development</strong><small>IBM · Coursera · mars 2025</small></li>
+        <li><strong>Software Design and Project Management</strong><small>HKUST · Coursera · mars 2025</small></li>
+        <li><strong>CrossKnowledge</strong><small>Design Thinking, Communiquez avec impact, Stimulez la collaboration, Dopez votre efficacité, Affûtez votre esprit critique, Libérez votre potentiel créatif</small></li>
       </ul>
     </div>
   </div>
   <div class="two rv" style="margin-top:56px">
-    <div><h2 class="s">Langues</h2><ul class="list"><li><strong>Arabe</strong><small>Langue maternelle</small></li><li><strong>Français</strong><small>Niveau avancé</small></li><li><strong>Anglais</strong><small>Intermédiaire</small></li></ul></div>
-    <div><h2 class="s">Savoir-être</h2><ul class="list"><li>Communication claire</li><li>Organisation et gestion du temps</li><li>Esprit d'initiative</li><li>Travail en équipe</li></ul></div>
+    <div><h2 class="s">Langues</h2><ul class="list"><li><strong>Arabe</strong><small>Langue maternelle</small></li><li><strong>Français</strong><small>Courant</small></li><li><strong>Anglais</strong><small>Intermédiaire</small></li></ul></div>
+    <div><h2 class="s">Compétences personnelles</h2><ul class="list"><li>Esprit d'équipe</li><li>Communication</li><li>Gestion du temps</li><li>Esprit d'initiative</li><li>Esprit d'analyse</li></ul></div>
+  </div>
+  <div class="two rv" style="margin-top:56px">
+    <div><h2 class="s">Activités parascolaires</h2><ul class="list"><li><strong>Maison de retraite Yacoub El Mansour</strong><small>Membre · visites solidaires</small></li><li><strong>Club EMSI IA Nexus</strong><small>Membre</small></li></ul></div>
+    <div><h2 class="s">Centres d'intérêt</h2><ul class="list"><li><strong>Voyages</strong><small>Découvertes culturelles</small></li><li><strong>Sport</strong><small>Musculation, cardio</small></li></ul></div>
   </div>
 </div></section>
 
@@ -261,7 +266,7 @@ footer{padding:36px 0 48px;text-align:center;color:var(--muted);font-size:.9rem;
     <p>Vous cherchez une stagiaire PFE en développement Java / Spring Boot ? Échangeons !</p>
     <div class="btns">
       <a class="btn p" href="mailto:kenzaminbari6@gmail.com">✉ Me contacter</a>
-      <a class="btn" href="CV_KENZA_MINBARI.pdf?v=3" target="_blank" rel="noopener">📄 Mon CV</a>
+      <a class="btn" href="CV_KENZA_MINBARI.pdf?v=4" target="_blank" rel="noopener">📄 Mon CV</a>
       <a class="btn" href="https://www.linkedin.com/in/kenza-minbari-853531288/" target="_blank" rel="noopener">LinkedIn ↗</a>
       <a class="btn" href="https://github.com/kenzaminbari" target="_blank" rel="noopener">GitHub ↗</a>
     </div>
